@@ -8,6 +8,9 @@ name: Release wgt
 
 on:
   workflow_dispatch:
+  push:
+    tags:
+      - 'v*'
 
 permissions:
   contents: write
